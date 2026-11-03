@@ -1,0 +1,27 @@
+{
+  "name": "mcp-github-ts",
+  "version": "1.0.0",
+  "description": "Servidor MCP que lee Pull Requests y escribe ramas, commits y PRs solo en el repositorio Playwright.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.25.3",
+    "@octokit/rest": "22.0.1",
+    "cors": "2.8.5",
+    "express": "4.21.2",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.17",
+    "@types/express": "4.17.21",
+    "@types/node": "20.17.30",
+    "typescript": "5.8.2"
+  }
+}
